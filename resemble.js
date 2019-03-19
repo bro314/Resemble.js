@@ -24,6 +24,7 @@ var isNode = new Function(
     var loadNodeCanvasImage;
 
     if (isNode()) {
+        /** @suppress {undefinedVars} */
         Canvas = require("canvas"); // eslint-disable-line global-require
         Img = Canvas.Image;
         loadNodeCanvasImage = Canvas.loadImage;
